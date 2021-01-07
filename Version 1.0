@@ -1,0 +1,16 @@
+local FindAddress = print("finding user/local game paths 1 2")
+local FindRemotes = print("Found (Remotes.FireServer) = 12")
+local CM_Base = game.Workspace
+local CM_PL = game.Players
+local Dword
+local CM_FindPartPattern = CM_PartPat()
+local Detore = false
+
+function CM_PartPat()
+
+    for i,v in pairs(game.Workspace:GetDescendants()) do
+        if v.ClassName == 'Part' then 
+            warn(v.Name, " \\\\\\\\\   Local Pointer =", v.Parent)
+        end
+        end
+end
