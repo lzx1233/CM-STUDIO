@@ -10,3 +10,16 @@ function CM_PartPat()
         end
         end
 end
+
+
+function Var_Remotes()
+
+    for i,v in pairs(game.Workspace:GetDescendants()) do
+        if v.ClassName == 'BoolValue' or v.ClassName == 'Vector3Value' or v.ClassName == 'IntValue' or v.ClassName == 'StringValue' or v.ClassName == 'NumberValue' or v.ClassName == 'RayValue' then 
+            print("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+            warn(v.Name, " \\ Value type :", v.ClassName, "\\ Value : ", v.Value)
+        end
+        end
+end
+
+Var_Remotes()
